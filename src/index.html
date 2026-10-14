@@ -69,9 +69,16 @@
     <div class="postup-hlava">
       <h2>Realizace na klíč</h2>
       <p>Pokládku vám dodáme kompletně, od první prohlídky po poslední lištu.</p>
-      <div class="provadime-blok">
+    </div>
+    <ol class="kroky" role="list">
+      {% for k in data.postup %}
+      <li class="krok"><span class="krok-cislo" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ k.nazev }}</h3><p>{{ k.text }}</p></div></li>
+      {% endfor %}
+    </ol>
+  </div>
+<div class="wrap provadime">
         <h3>Nabízíme a&nbsp;provádíme</h3>
-      <ul class="carky" role="list">
+      <ul class="carky tri-sloupce" role="list">
         <li>odstranění starých podlah a&nbsp;jejich odvoz (včetně sutin)</li>
         <li>vyměření podlah</li>
         <li>vyrovnání podlah</li>
@@ -84,19 +91,12 @@
         <li>malování</li>
       </ul>
       </div>
-    </div>
-    <ol class="kroky" role="list">
-      {% for k in data.postup %}
-      <li class="krok"><span class="krok-cislo" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ k.nazev }}</h3><p>{{ k.text }}</p></div></li>
-      {% endfor %}
-    </ol>
-  </div>
 </section>
 
 <section class="cena">
   <div class="wrap cena-in">
     <figure class="cena-foto">
-      {{ img('img_20190220_110036.jpg', 'Vzorník koberců otevřený na stole', sizes='(min-width: 64rem) 20rem, 60vw') }}
+      {{ img('img_20190214_104316.jpg', 'Vzorky podlah připravené na stole', sizes='(min-width: 64rem) 20rem, 60vw') }}
     </figure>
     <div class="cena-text">
       <p class="razitko" aria-hidden="true">Jde to i&nbsp;levně</p>
@@ -115,10 +115,7 @@
     </div>
     <div class="ukazky-mrizka">
       {% set r = data.realizace %}
-      {{ galerie(r[0], sizes='(min-width: 64rem) 19rem, 46vw', trida='realizace-velka') }}
-      {{ galerie(r[1], sizes='(min-width: 64rem) 12rem, 30vw') }}
-      {{ galerie(r[2], sizes='(min-width: 64rem) 16rem, 60vw', trida='realizace-jedna') }}
-      {{ galerie(r[3], sizes='(min-width: 64rem) 12rem, 30vw') }}
+      {% for i in [0, 1, 3, 4] %}{{ galerie(r[i], sizes='(min-width: 64rem) 12rem, 30vw', limit=3) }}{% endfor %}
     </div>
   </div>
 </section>

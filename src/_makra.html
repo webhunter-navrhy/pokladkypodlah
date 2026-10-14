@@ -1,7 +1,7 @@
-{% macro galerie(r, sizes='(min-width: 64rem) 22rem, 45vw', trida='') %}
+{% macro galerie(r, sizes='(min-width: 64rem) 22rem, 45vw', trida='', limit=99) %}
 <figure class="realizace {{ trida }}" id="{{ r.id }}">
-  <div class="realizace-fotky pocet-{{ r.fotky|length }}">
-    {% for f in r.fotky %}<a class="foto-odkaz" href="{{ img_url(f[0], 1280) }}" data-popis="{{ r.nazev }}">{{ img(f[0], f[1], sizes=sizes) }}</a>{% endfor %}
+  <div class="realizace-fotky pocet-{{ [r.fotky|length, limit]|min }}">
+    {% for f in r.fotky[:limit] %}<a class="foto-odkaz" href="{{ img_url(f[0], 1280) }}" data-popis="{{ r.nazev }}">{{ img(f[0], f[1], sizes=sizes) }}</a>{% endfor %}
   </div>
   <figcaption class="stitek"><span class="stitek-dirka" aria-hidden="true"></span>{{ r.nazev }}</figcaption>
 </figure>

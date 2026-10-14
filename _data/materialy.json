@@ -53,7 +53,7 @@
  {
   "id": "drevo",
   "nazev": "Parkety a podklad",
-  "vzorek": "",
+  "vzorek": "vzorek-podklad.jpg",
   "text": [
    "Než se položí nová podlaha, musí být v pořádku to, co je pod ní. Staré podlahy odstraníme a odvezeme včetně sutin, podklad vyrovnáme samonivelační stěrkou.",
    "Parkety, které máte, umíme obrousit a nalakovat."
@@ -72,7 +72,7 @@
  {
   "id": "malovani",
   "nazev": "Malování a úklid",
-  "vzorek": "",
+  "vzorek": "vzorek-stena.jpg",
   "text": [
    "V oblasti malování se pohybujeme již mnoho let. Oproti bohatým zkušenostem naše ceny zůstávají lidové.",
    "Objednat si u nás ale také můžete třeba jen úklid po malířích, úklid domácnosti anebo úklid firemních prostor v jakémkoliv rozsahu. Máme pečlivé zaměstnance a slevy pro stálé zákazníky."
@@ -90,7 +90,7 @@
  {
   "id": "sortiment",
   "nazev": "Doplňkový sortiment",
-  "vzorek": "",
+  "vzorek": "vzorek-lista.jpg",
   "text": [
    "Mimo výše uvedené služby si u nás můžete objednat i materiál, který k podlaze patří."
   ],

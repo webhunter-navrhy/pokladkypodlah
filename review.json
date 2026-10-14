@@ -1,0 +1,15 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Sekce „Vše za velkoobchodní ceny“ (PC buňka 5, mobil buňka 5–6): fotka katalogu je zrcadlově otočená, nápis na obálce se čte „noitcello“. Na první pohled to vypadá jako chyba. Fotku vrátit do správné orientace (odebrat scaleX(-1) nebo flip ve zdroji), nebo ji nahradit vzorníkem či fotkou realizace z briefu.",
+    "Záložky materiálů v sekci „Ze vzorníku si vyberete u sebe doma“ (PC buňka 3, mobil buňka 2): Parkety a podklad, Malování a úklid a Doplňkový sortiment mají místo vzorku prázdný béžový čtvereček. Vzorník, na kterém stojí celý koncept, tak působí nedodělaně. Každé záložce dát skutečný výřez z fotek klienta (parkety z IMG_20190207…, linoleum ze Šestajovic, stěna nebo lišta), nebo prázdné náhledy úplně zrušit. Zároveň vyměnit vzorek vzorek-koberec-modry-185.webp za větší zdroj, protože na mobilu je roztažený 1,41×.",
+    "Sekce „Realizace na klíč“ a „Ukázky práce“ na PC (buňky 4–7): seznam „Nabízíme a provádíme“ přetéká pod kroky 1–5, takže vlevo visí sloupec a vpravo zůstává prázdno (buňka 5). Galerie je rozsypaná: různé velikosti dlaždic, malá fotka z Amazonu volně plave a mezi skupinami jsou velké díry. Seznam služeb rozdělit do dvou sloupců pod úvodní text, aby skončil zároveň s kroky. Galerii postavit na pevnou mřížku se stejnou výškou řádku (např. 3 sloupce, výška 280 px, object-fit: cover) a s popiskem u každé skupiny."
+  ],
+  "silne": [
+    "Koncept vychází přímo z oboru: vějíř vzorků v hero a vzorník materiálů jako navigace odpovídají skutečné službě „přijedeme se vzorníky až domů“.",
+    "Brand sedí: textové logo POKLÁDKY PODLAH s kurzívou „JDE TO I LEVNĚ“, oranžová tlačítka a krémová podle starého webu, lidový tón textů zůstal.",
+    "Obsah je doložený: 1997, reference ve štítcích, BAUHAUS/TREND/KIKA, IČO a adresy jsou z briefu a nic není vymyšlené.",
+    "Na mobilu nic nepřetéká a dotykové cíle jsou v pořádku. Telefon je v hlavičce i v kontaktu velký a je jasné, co firma dělá a kde."
+  ],
+  "verdikt": "opravit – dobrý koncept, odpovídá oboru a brandu, ale zrcadlová fotka, prázdné vzorky a rozsypaná galerie na PC zatím působí nedodělaně. Po těchto třech opravách je web reálně na 8."
+}
