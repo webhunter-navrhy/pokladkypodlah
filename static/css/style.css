@@ -225,7 +225,7 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 .cena-partneri span { color: var(--oranz-text); padding-inline: .2em; }
 .cena-text p:not(.cena-partneri) { margin-top: 1.25rem; max-width: 36rem; }
 .cena-pozn { font-style: italic; font-weight: 300; color: var(--sepie-2); }
-.cena-foto img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 2px; }
+.cena-foto img { width: 100%; border-radius: 2px; }
 .cena-foto figcaption { margin-top: .6rem; font-size: var(--small); color: var(--muted); }
 
 /* ===== ukázky práce ===== */
@@ -260,6 +260,8 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 .reference h2 { max-width: 12em; margin-bottom: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
 .reference-list { display: flex; flex-wrap: wrap; gap: .6rem; max-width: 62rem; }
 .reference-list li { display: inline-flex; align-items: center; gap: .6rem; padding: .55rem 1rem .55rem .7rem; border: 1px solid rgba(232, 229, 206, .35); border-radius: 2px; background: rgba(43, 33, 25, .35); font-size: .98rem; }
+.reference-sazba { columns: 3 16rem; column-gap: clamp(2rem, 4vw, 3.5rem); max-width: 68rem; border-top: 1px solid rgba(232, 229, 206, .25); }
+.reference-sazba li { break-inside: avoid; font-family: var(--f-display); font-size: clamp(1.1rem, 1rem + .4vw, 1.35rem); line-height: 1.3; padding: .85rem 0; border-bottom: 1px solid rgba(232, 229, 206, .18); }
 .reference-dalsi { margin-top: 2rem; font-style: italic; font-weight: 300; color: rgba(232, 229, 206, .85); }
 .reference-list-svetly li { border-color: var(--linka-silna); background: var(--papir-2); }
 .reference-list-svetly .reference-posledni { font-style: italic; border-style: dashed; background: transparent; }

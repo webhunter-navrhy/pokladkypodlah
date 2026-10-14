@@ -88,8 +88,8 @@
       <p class="cena-pozn">Naší odměnou je vaše doporučení.</p>
     </div>
     <figure class="cena-foto">
-      {{ img('img_20190214_104316.jpg', 'Vzorky podlah připravené na stole', sizes='(min-width: 64rem) 26rem, 90vw') }}
-      <figcaption>Vzorky, se kterými za vámi přijedeme</figcaption>
+      {{ img('vzornik-kobercu.jpg', 'Otevřený vzorník koberců se čtyřmi vzorky', sizes='(min-width: 64rem) 30rem, 90vw') }}
+      <figcaption>Vzorník koberců – s takovými za vámi přijedeme</figcaption>
     </figure>
   </div>
 </section>
@@ -102,7 +102,7 @@
     </div>
     <div class="ukazky-mrizka">
       {% set r = data.realizace %}
-      {% for i in [0, 1, 3, 4] %}{{ zakazka(r[i], loop.index0) }}{% endfor %}
+      {% for i in [0, 3] %}{{ zakazka(r[i], loop.index0) }}{% endfor %}
     </div>
   </div>
 </section>
@@ -111,8 +111,8 @@
   <div class="reference-pozadi" aria-hidden="true">{{ img('antik.jpg', '', sizes='100vw') }}</div>
   <div class="wrap reference-in">
     <h2>Kde už máme položeno</h2>
-    <ul class="reference-list" role="list">
-      {% for x in data.reference %}<li><span class="stitek-dirka" aria-hidden="true"></span>{{ x }}</li>{% endfor %}
+    <ul class="reference-sazba" role="list">
+      {% for x in data.reference %}<li>{{ x }}</li>{% endfor %}
     </ul>
     <p class="reference-dalsi">…a mnoho bytů a&nbsp;rodinných domů z&nbsp;Prahy a&nbsp;středních Čech.</p>
   </div>
