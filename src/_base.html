@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="{{ base }}fonts/YoungSerif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body class="{% block telo %}{% endblock %}">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="hlavicka">
+  <div class="hlavicka-in">
+    <a href="{{ url('') }}" class="znacka" aria-label="{{ site.znacka }} – úvod">
+      <span class="znacka-jmeno">Pokládky podlah</span>
+      <span class="znacka-slogan">{{ site.slogan }}</span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><span class="burger-cara"></span></button>
+    <nav id="menu" class="menu" aria-label="Hlavní">
+      {% for n in site.nav %}{% set h = (url('') ~ n.href) if n.href.startswith('#') else url(n.href) %}<a href="{{ h }}"{% if aktivni == n.href %} aria-current="page"{% endif %}>{{ n.text }}</a>{% endfor %}
+      <a class="menu-tel" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon_zobrazit }}</a>
+    </nav>
+  </div>
+</header>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<footer class="paticka">
+  <div class="paticka-in">
+    <div class="paticka-znacka">
+      <span class="znacka-jmeno">Pokládky podlah</span>
+      <span class="znacka-slogan">{{ site.slogan }}</span>
+      <p>Praha a střední Čechy, od roku 1997.</p>
+    </div>
+    <div>
+      <h2 class="paticka-nadpis">Kontakt</h2>
+      <p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon_zobrazit }}</a><br>
+      <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+    </div>
+    <div>
+      <h2 class="paticka-nadpis">Provozovna</h2>
+      <p>{{ site.provozovna }}</p>
+      <h2 class="paticka-nadpis">Sídlo</h2>
+      <p>{{ site.sidlo }}<br>IČO {{ site.ico }}</p>
+    </div>
+    <nav aria-label="Patička">
+      <h2 class="paticka-nadpis">Stránky</h2>
+      <a href="{{ url('') }}">Pokládky podlah</a>
+      <a href="{{ url('ukazky-prace') }}">Ukázky práce</a>
+      <a href="{{ url('reference') }}">Reference</a>
+      <a href="{{ url('zednicke-prace') }}">Zednické práce</a>
+      <a href="{{ url('kariera') }}">Kariéra</a>
+    </nav>
+  </div>
+</footer>
+<dialog class="lightbox" aria-label="Fotografie">
+  <img alt="">
+  <p class="lightbox-popis"></p>
+  <button type="button" class="lightbox-zavrit">Zavřít</button>
+</dialog>
+<script src="{{ asset('js/main.js') }}" defer></script>
+</body>
+</html>

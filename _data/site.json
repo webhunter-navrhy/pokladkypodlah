@@ -1,0 +1,64 @@
+{
+ "slug": "pokladkypodlah",
+ "nazev": "Pokládky podlah – Jaromír Vydra",
+ "url": "https://webhunter-navrhy.github.io/pokladkypodlah/",
+ "base": "/pokladkypodlah/",
+ "lang": "cs",
+ "popis": "Pokládka podlah v Praze a středních Čechách od roku 1997: koberce, plovoucí podlahy, vinyl, PVC, linoleum, parkety. Vzorníky přivezeme až domů.",
+ "navrh": true,
+ "domena": "",
+ "og_image": "img_20190207_081025.jpg",
+ "logo": "",
+ "theme_color": "#f5f2e8",
+ "typ": "HomeAndConstructionBusiness",
+ "ico": "42486297",
+ "kontakt": {
+  "email": "info@pokladkypodlah.cz",
+  "telefon": "+420 602 311 520",
+  "telefon_zobrazit": "602 311 520",
+  "adresa": {
+   "ulice": "Malkovského 589",
+   "psc": "199 00",
+   "mesto": "Praha 9 – Letňany",
+   "zeme": "CZ"
+  }
+ },
+ "oteviraci_doba": [],
+ "sameas": [],
+ "cenove_rozpeti": "",
+ "formular": {
+  "endpoint": "",
+  "demo": true,
+  "predmet": "Poptávka z webu pokladkypodlah.cz"
+ },
+ "nav": [
+  {
+   "text": "Materiály",
+   "href": "#materialy"
+  },
+  {
+   "text": "Ukázky práce",
+   "href": "ukazky-prace"
+  },
+  {
+   "text": "Reference",
+   "href": "reference"
+  },
+  {
+   "text": "Zednické práce",
+   "href": "zednicke-prace"
+  },
+  {
+   "text": "Kariéra",
+   "href": "kariera"
+  },
+  {
+   "text": "Kontakt",
+   "href": "#kontakt"
+  }
+ ],
+ "znacka": "Pokládky podlah",
+ "slogan": "Jde to i levně",
+ "sidlo": "Jaromír Vydra, Pokládky podlah, 250 65 Líbeznice – Bášť",
+ "provozovna": "Malkovského 589, 199 00 Praha 9 – Letňany"
+}

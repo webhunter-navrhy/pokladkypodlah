@@ -1,0 +1,26 @@
+{# Kontaktní formulář. Endpoint a demo režim z _data/site.json (formular.endpoint, formular.demo). #}
+<form class="formular" method="post" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <div class="formular-radek">
+    <label>Jméno <input name="jmeno" autocomplete="name" required></label>
+    <label>Telefon <input name="telefon" type="tel" autocomplete="tel" required></label>
+  </div>
+  <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+  <label>O co máte zájem
+    <select name="predmet">
+      <option>Pokládka podlahy</option>
+      <option>Koberce</option>
+      <option>Plovoucí podlaha</option>
+      <option>Vinyl, PVC, linoleum</option>
+      <option>Broušení a lakování parket</option>
+      <option>Malování a úklid</option>
+      <option>Zednické práce</option>
+      <option>Něco jiného</option>
+    </select>
+  </label>
+  <label>Zpráva <span class="formular-napoveda">místo, přibližná plocha, kdy by se hodilo</span><textarea name="zprava" rows="4"></textarea></label>
+  <div class="past" aria-hidden="true"><label>Nevyplňovat <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <button type="submit" class="tlacitko">Poslat poptávku</button>
+  <p class="formular-poznamka">Vámi zadané údaje budou použity pouze pro zpětný kontakt s vámi.</p>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

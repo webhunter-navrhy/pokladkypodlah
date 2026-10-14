@@ -1,0 +1,21 @@
+{% macro galerie(r, sizes='(min-width: 64rem) 22rem, 45vw', trida='') %}
+<figure class="realizace {{ trida }}" id="{{ r.id }}">
+  <div class="realizace-fotky pocet-{{ r.fotky|length }}">
+    {% for f in r.fotky %}<a class="foto-odkaz" href="{{ img_url(f[0], 1280) }}" data-popis="{{ r.nazev }}">{{ img(f[0], f[1], sizes=sizes) }}</a>{% endfor %}
+  </div>
+  <figcaption class="stitek"><span class="stitek-dirka" aria-hidden="true"></span>{{ r.nazev }}</figcaption>
+</figure>
+{% endmacro %}
+
+{% macro kontakt_pas(nadpis='Cenová nabídka zdarma') %}
+<section class="pas-kontakt">
+  <div class="wrap pas-kontakt-in">
+    <h2>{{ nadpis }}</h2>
+    <p>Přijedeme se vzorníky, podlahu vyměříme a spočítáme. Stačí zavolat nebo napsat.</p>
+    <div class="akce">
+      <a class="tlacitko" href="{{ url('') }}#kontakt">Napsat poptávku</a>
+      <a class="tlacitko tlacitko-obrys" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon_zobrazit }}</a>
+    </div>
+  </div>
+</section>
+{% endmacro %}

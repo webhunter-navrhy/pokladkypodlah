@@ -1,0 +1,169 @@
+{% extends "_base.html" %}
+{% from "_makra.html" import galerie %}
+{% set titulek = 'Pokládka podlah Praha a střední Čechy | Jde to i levně – Jaromír Vydra' %}
+{% set cesta = '' %}
+{% set aktivni = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="nadtitulek">Praha a střední Čechy · od roku 1997</p>
+      <h1>Pokládka podlah, se kterou to jde i&nbsp;levně</h1>
+      <p class="perex">Přijedeme k&nbsp;vám se vzorníky až domů. Technik posoudí podklad, podlahu vyměříme a&nbsp;cenovou nabídku připravíme zdarma. Koberce, plovoucí podlahy, vinyl, PVC i&nbsp;linoleum – vše za velkoobchodní ceny.</p>
+      <div class="akce">
+        <a class="tlacitko" href="#kontakt">Chci cenovou nabídku</a>
+        <a class="tlacitko tlacitko-obrys" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}"><span class="sr-only">Zavolat </span>{{ site.kontakt.telefon_zobrazit }}</a>
+      </div>
+    </div>
+    <div class="vejir" aria-label="Vzorník: povrchy z našich realizací">
+      <ul class="vejir-list" role="list">
+        {% for v in data.vzorky %}
+        <li class="vzorek" style="--i: {{ loop.index0 }}; --n: {{ data.vzorky|length }}">
+          <div class="vzorek-plocha">{{ img(v.img, v.nazev ~ ' – ' ~ v.misto, sizes='160px', eager=True) }}</div>
+          <p class="vzorek-stitek"><strong>{{ v.nazev }}</strong><span>{{ v.misto }}</span></p>
+        </li>
+        {% endfor %}
+      </ul>
+      <span class="vejir-sroub" aria-hidden="true"></span>
+      <p class="vejir-popis">Výřezy z&nbsp;podlah, které jsme položili</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce materialy" id="materialy">
+  <div class="wrap">
+    <div class="sekce-hlava">
+      <h2>Ze vzorníku si vyberete u&nbsp;sebe doma</h2>
+      <p>Doby striktně betonových podlah a&nbsp;jednoho druhu lina jsou naštěstí hlubokou minulostí. Dnes vám nabídneme obrovskou škálu přírodních i&nbsp;umělých materiálů se skvělými vlastnostmi i&nbsp;vzhledem.</p>
+    </div>
+    <div class="vzornik" data-vzornik>
+      <div class="vzornik-volby" role="tablist" aria-label="Materiály a služby">
+        {% for m in data.materialy %}
+        <button type="button" role="tab" id="tab-{{ m.id }}" aria-controls="panel-{{ m.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}" {% if not loop.first %}tabindex="-1"{% endif %} class="volba">
+          <span class="volba-vzorek{% if not m.vzorek %} volba-vzorek-plny{% endif %}" aria-hidden="true">{% if m.vzorek %}{{ img(m.vzorek, '', sizes='48px') }}{% endif %}</span>
+          <span class="volba-nazev">{{ m.nazev }}</span>
+        </button>
+        {% endfor %}
+      </div>
+      {% for m in data.materialy %}
+      <div class="panel{% if not m.foto %} panel-bez-fotky{% endif %}" role="tabpanel" id="panel-{{ m.id }}" aria-labelledby="tab-{{ m.id }}" {% if not loop.first %}hidden{% endif %}>
+        <div class="panel-text">
+          <h3>{{ m.nazev }}</h3>
+          {% for t in m.text %}<p>{{ t }}</p>{% endfor %}
+          <ul class="carky" role="list">{% for b in m.body %}<li>{{ b }}</li>{% endfor %}</ul>
+        </div>
+        {% if m.foto %}
+        <figure class="panel-foto">
+          {{ img(m.foto, m.foto_alt, sizes='(min-width: 64rem) 26rem, 80vw') }}
+          <figcaption>{{ m.foto_popis }}</figcaption>
+        </figure>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce postup" id="postup">
+  <div class="wrap postup-in">
+    <div class="postup-hlava">
+      <h2>Realizace na klíč</h2>
+      <p>Pokládku vám dodáme kompletně, od první prohlídky po poslední lištu.</p>
+      <div class="provadime-blok">
+        <h3>Nabízíme a&nbsp;provádíme</h3>
+      <ul class="carky" role="list">
+        <li>odstranění starých podlah a&nbsp;jejich odvoz (včetně sutin)</li>
+        <li>vyměření podlah</li>
+        <li>vyrovnání podlah</li>
+        <li>samonivelační stěrky</li>
+        <li>montáže dřevěných, korkových a&nbsp;laminátových podlah</li>
+        <li>vinyl, PVC a&nbsp;linoleum všech provedení a&nbsp;kvalit</li>
+        <li>broušení parket</li>
+        <li>lakování podlah</li>
+        <li>pokládku koberců (zátěžových i&nbsp;bytových)</li>
+        <li>malování</li>
+      </ul>
+      </div>
+    </div>
+    <ol class="kroky" role="list">
+      {% for k in data.postup %}
+      <li class="krok"><span class="krok-cislo" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ k.nazev }}</h3><p>{{ k.text }}</p></div></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="cena">
+  <div class="wrap cena-in">
+    <figure class="cena-foto">
+      {{ img('img_20190220_110036.jpg', 'Vzorník koberců otevřený na stole', sizes='(min-width: 64rem) 20rem, 60vw') }}
+    </figure>
+    <div class="cena-text">
+      <p class="razitko" aria-hidden="true">Jde to i&nbsp;levně</p>
+      <h2>Vše za velkoobchodní ceny</h2>
+      <p>Spolupracujeme s&nbsp;obchodními domy BAUHAUS, TREND a&nbsp;KIKA, kde vám můžeme zajistit množstevní slevy. Položíme i&nbsp;podlahu, kterou si koupíte sami. Stálí zákazníci mají slevy.</p>
+      <p class="cena-pozn">Naší odměnou je vaše doporučení.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce ukazky" id="ukazky">
+  <div class="wrap">
+    <div class="sekce-hlava sekce-hlava-radek">
+      <h2>Ukázky práce</h2>
+      <a class="odkaz-sipka" href="{{ url('ukazky-prace') }}">Všechny ukázky</a>
+    </div>
+    <div class="ukazky-mrizka">
+      {% set r = data.realizace %}
+      {{ galerie(r[0], sizes='(min-width: 64rem) 19rem, 46vw', trida='realizace-velka') }}
+      {{ galerie(r[1], sizes='(min-width: 64rem) 12rem, 30vw') }}
+      {{ galerie(r[2], sizes='(min-width: 64rem) 16rem, 60vw', trida='realizace-jedna') }}
+      {{ galerie(r[3], sizes='(min-width: 64rem) 12rem, 30vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="reference" id="reference">
+  <div class="reference-pozadi" aria-hidden="true">{{ img('antik.jpg', '', sizes='100vw') }}</div>
+  <div class="wrap reference-in">
+    <h2>Kde už máme položeno</h2>
+    <ul class="reference-list" role="list">
+      {% for x in data.reference %}<li><span class="stitek-dirka" aria-hidden="true"></span>{{ x }}</li>{% endfor %}
+    </ul>
+    <p class="reference-dalsi">…a mnoho bytů a&nbsp;rodinných domů z&nbsp;Prahy a&nbsp;středních Čech.</p>
+  </div>
+</section>
+
+<section class="sekce dalsi">
+  <div class="wrap dalsi-in">
+    <article class="dalsi-blok">
+      <h2>Zednické práce</h2>
+      <p>{{ data.zednicke.uvod }} Nově nabízíme i&nbsp;stavební práce:</p>
+      <ul class="carky" role="list">{% for p in data.zednicke.prace %}<li>{{ p }}</li>{% endfor %}</ul>
+      <a class="odkaz-sipka" href="{{ url('zednicke-prace') }}">Zednické práce</a>
+    </article>
+    <article class="dalsi-blok">
+      <h2>Hledáme kolegy</h2>
+      <p>{{ data.kariera.uvod }}</p>
+      <p>{{ data.kariera.nabizime }}</p>
+      <a class="odkaz-sipka" href="{{ url('kariera') }}">Kariéra</a>
+    </article>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div class="kontakt-info">
+      <h2>Cenová nabídka zdarma</h2>
+      <p>Napište, co potřebujete položit nebo opravit. Ozveme se, domluvíme obhlídku a&nbsp;přivezeme vzorníky.</p>
+      <a class="kontakt-tel" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon_zobrazit }}</a>
+      <a class="kontakt-mail" href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>
+      <dl class="kontakt-adresy">
+        <div><dt>Provozovna</dt><dd>{{ site.provozovna }}</dd></div>
+        <div><dt>Sídlo</dt><dd>{{ site.sidlo }}<br>IČO {{ site.ico }}</dd></div>
+      </dl>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

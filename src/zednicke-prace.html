@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+{% from "_makra.html" import kontakt_pas %}
+{% set titulek = 'Zednické práce a rekonstrukce bytů Praha | Pokládky podlah' %}
+{% set popis = 'Rekonstrukce bytů a rodinných domů: dlažby a obklady, štukování, příčky a sádrokartonové konstrukce, zděná jádra na klíč. Praha a střední Čechy.' %}
+{% set cesta = 'zednicke-prace/' %}
+{% set aktivni = 'zednicke-prace' %}
+{% block obsah %}
+<section class="podstranka-hlava">
+  <div class="wrap">
+    <p class="nadtitulek"><a href="{{ url('') }}">Pokládky podlah</a> / Zednické práce</p>
+    <h1>Zednické práce</h1>
+    <p class="perex">{{ data.zednicke.uvod }} Vedle podlah teď nově nabízíme i&nbsp;stavební práce.</p>
+  </div>
+</section>
+<section class="sekce sekce-uzka">
+  <div class="wrap zednicke">
+    <h2>Objednat si u&nbsp;nás můžete</h2>
+    <ul class="zednicke-list" role="list">
+      {% for p in data.zednicke.prace %}<li><span class="krok-cislo" aria-hidden="true">{{ loop.index }}</span>{{ p }}</li>{% endfor %}
+    </ul>
+    <p class="zednicke-zaver">{{ data.zednicke.zaver }}</p>
+    <p class="placeholder">Doplníme: fotky ze zednických zakázek</p>
+  </div>
+</section>
+{{ kontakt_pas('Rekonstrukce i podlaha od jedné firmy') }}
+{% endblock %}

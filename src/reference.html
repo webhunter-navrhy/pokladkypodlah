@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% from "_makra.html" import kontakt_pas %}
+{% set titulek = 'Reference – Obecní dům, Nemocnice Bulovka, Hotel Avion | Pokládky podlah' %}
+{% set popis = 'Kde jsme pokládali podlahy: Lesy ČR, Obecní dům Praha, Nemocnice Bulovka, Výzkumný ústav Řež, Hotel Avion, Zámek Břežany a mnoho bytů a rodinných domů.' %}
+{% set cesta = 'reference/' %}
+{% set aktivni = 'reference' %}
+{% block obsah %}
+<section class="podstranka-hlava">
+  <div class="wrap">
+    <p class="nadtitulek"><a href="{{ url('') }}">Pokládky podlah</a> / Reference</p>
+    <h1>Reference</h1>
+    <p class="perex">Kanceláře, nemocnice, školy, hotely, bytové domy i&nbsp;rodinné domy v&nbsp;Praze a&nbsp;středních Čechách.</p>
+  </div>
+</section>
+<section class="sekce sekce-uzka">
+  <div class="wrap reference-stranka">
+    <ul class="reference-list reference-list-svetly" role="list">
+      {% for x in data.reference %}<li><span class="stitek-dirka" aria-hidden="true"></span>{{ x }}</li>{% endfor %}
+      <li class="reference-posledni"><span class="stitek-dirka" aria-hidden="true"></span>Mnoho bytů a&nbsp;RD z&nbsp;Prahy a&nbsp;středních Čech</li>
+    </ul>
+    <figure class="reference-foto">
+      {{ img('img_20180312_082831.jpg', 'Koberec na schodišti Obecního domu v Praze', sizes='(min-width: 64rem) 22rem, 80vw') }}
+      <figcaption>Obecní dům, Praha 1 · <a href="{{ url('ukazky-prace') }}#obecni-dum">další fotky</a></figcaption>
+    </figure>
+  </div>
+</section>
+{{ kontakt_pas() }}
+{% endblock %}

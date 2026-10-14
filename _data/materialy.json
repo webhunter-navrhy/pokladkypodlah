@@ -1,0 +1,107 @@
+[
+ {
+  "id": "koberce",
+  "nazev": "Koberce",
+  "vzorek": "vzorek-koberec-cerveny.jpg",
+  "text": [
+   "Textilní podlahové krytiny jsou teplé, měkké, tiché a útulné. Koberce se dnes vyrábějí v moderních dezénech a v dostatečně široké barevné škále.",
+   "Přijedeme k vám se vzorníky až domů, abyste si mohli vybrat. Spolupracujeme s obchodními domy BAUHAUS, TREND a KIKA. V těchto domech vám můžeme zajistit množstevní slevy."
+  ],
+  "body": [
+   "bytové i zátěžové koberce",
+   "obšívání a čištění koberců",
+   "čisticí zóny a rohože"
+  ],
+  "foto": "img_20180312_082831.jpg",
+  "foto_alt": "Koberec položený na schodišti Obecního domu v Praze",
+  "foto_popis": "Obecní dům, Praha 1"
+ },
+ {
+  "id": "plovouci",
+  "nazev": "Plovoucí podlahy",
+  "vzorek": "vzorek-laminat.jpg",
+  "text": [
+   "Provádíme pokládku plovoucích podlah včetně kompletního olištování. Položíme i vámi zakoupenou podlahu.",
+   "Poradíme s výběrem v pohodlí vašeho domova. Vybrat si můžete z bohatého vzorníku. To vše za velmi dobré ceny."
+  ],
+  "body": [
+   "dřevěné, korkové a laminátové podlahy",
+   "kompletní olištování",
+   "pokládka podlahy, kterou si koupíte sami"
+  ],
+  "foto": "img_20190207_081025.jpg",
+  "foto_alt": "Nově položená plovoucí podlaha v dekoru dřeva v pokoji s balkonem",
+  "foto_popis": "Ukázka pokládky"
+ },
+ {
+  "id": "vinyl",
+  "nazev": "Vinyl, PVC a linoleum",
+  "vzorek": "vzorek-vinyl.jpg",
+  "text": [
+   "Podlahoviny patří dnes k charakteru moderního bydlení. Zaručují zdravé a čisté bydlení.",
+   "Tytam jsou doby, kdy jste si mohli „vybrat“ z jednoho druhu bez rozlišení účelu. Dnes se vyrábějí v různých šířích, dekorech a k různým účelům použití. Bohaté vzorníky vám napoví víc."
+  ],
+  "body": [
+   "vinylové podlahy",
+   "PVC všech provedení a kvalit",
+   "zátěžové linoleum s olištováním"
+  ],
+  "foto": "img-20180308-wa0001.jpg",
+  "foto_alt": "Zátěžové linoleum v dekoru dřeva v rodinném domě v Šestajovicích",
+  "foto_popis": "RD Šestajovice"
+ },
+ {
+  "id": "drevo",
+  "nazev": "Parkety a podklad",
+  "vzorek": "",
+  "text": [
+   "Než se položí nová podlaha, musí být v pořádku to, co je pod ní. Staré podlahy odstraníme a odvezeme včetně sutin, podklad vyrovnáme samonivelační stěrkou.",
+   "Parkety, které máte, umíme obrousit a nalakovat."
+  ],
+  "body": [
+   "odstranění starých podlah a odvoz sutin",
+   "vyměření a vyrovnání podlah",
+   "samonivelační stěrky",
+   "broušení parket",
+   "lakování podlah"
+  ],
+  "foto": "img_20190124_075549.jpg",
+  "foto_alt": "Kancelář během pokládky koberce",
+  "foto_popis": "Ukázka pokládky"
+ },
+ {
+  "id": "malovani",
+  "nazev": "Malování a úklid",
+  "vzorek": "",
+  "text": [
+   "V oblasti malování se pohybujeme již mnoho let. Oproti bohatým zkušenostem naše ceny zůstávají lidové.",
+   "Objednat si u nás ale také můžete třeba jen úklid po malířích, úklid domácnosti anebo úklid firemních prostor v jakémkoliv rozsahu. Máme pečlivé zaměstnance a slevy pro stálé zákazníky."
+  ],
+  "body": [
+   "malování",
+   "úklid po malířích",
+   "úklid domácností",
+   "úklid firemních prostor"
+  ],
+  "foto": "",
+  "foto_alt": "",
+  "foto_popis": ""
+ },
+ {
+  "id": "sortiment",
+  "nazev": "Doplňkový sortiment",
+  "vzorek": "",
+  "text": [
+   "Mimo výše uvedené služby si u nás můžete objednat i materiál, který k podlaze patří."
+  ],
+  "body": [
+   "penetrace, stěrky, lepidla, tmely",
+   "soklové a přechodové lišty ke všem typům podlahovin",
+   "čisticí zóny a rohože",
+   "obšívání a čištění koberců"
+  ],
+  "foto": "",
+  "foto_alt": "",
+  "foto_popis": ""
+ }
+]

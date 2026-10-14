@@ -1,0 +1,287 @@
+{
+ "slug": "pokladkypodlah",
+ "zdroj_url": "https://pokladkypodlah.cz",
+ "firma": "Pokládky podlah",
+ "obor": [
+  "stavebnictví a řemesla",
+  "e-shop / obchod"
+ ],
+ "ico": "42486297",
+ "ares": {
+  "ico": "42486297",
+  "obchodni_jmeno": "Jaromír Vydra",
+  "pravni_forma": "101",
+  "adresa": "Okružní 649, 25085 Bašť",
+  "obec": "Bašť",
+  "dic": null,
+  "datum_vzniku": "1992-11-16",
+  "nace": [
+   "49410",
+   "G",
+   "43320",
+   "43120",
+   "433"
+  ]
+ },
+ "kontakty": {
+  "emaily": [
+   "info@pokladkypodlah.cz"
+  ],
+  "telefony": [
+   "+420 602 311 520",
+   "602 311 520"
+  ],
+  "adresa": "sídlo: 250 65 Líbeznice – Bášť (ARES: Okružní 649, 250 85 Bašť); provozovna: Malkovského 589, 199 00 Praha 9 – Letňany",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "",
+  "poznamka": "Logo je jen text: POKLÁDKY PODLAH (tučný serif, verzálky) + kurzíva 'JDE TO I LEVNĚ' (Twenty Thirteen). Na webu přepsáno textem. Původně brief.py chytil počítadlo TOPlist – smazáno."
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#e05d22",
+   "#e8e5ce",
+   "#722d19",
+   "#003388",
+   "#2874fc",
+   "#fbca3c"
+  ],
+  "z_loga": [
+   "#99cbfe",
+   "#1d7c21"
+  ],
+  "theme_color": null,
+  "doporucene": [
+   "#e8e5ce",
+   "#2b2119",
+   "#d94412",
+   "#e05d22"
+  ],
+  "poznamka": "oranžová tlačítek a odkazů #e05d22→#d94412, krémová lišta menu #e8e5ce, sépiová úvodní fotka antik.jpg"
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/IMG-20180308-WA0000.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG-20180308-WA0001.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG-20180308-WA0002-1.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180312_082831.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180312_082835.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180312_082847.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180412_073705.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180412_073714.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20180412_090033.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20181218_101003.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190123_123507.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190124_075549.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190124_085634.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190207_081025.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190207_082746.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190207_084402.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190214_075252.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190214_103858.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190214_104316.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190219_093514.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/IMG_20190220_110036.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "soubor": "podklady/foto/antik.jpg",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "h1",
+   "text": "POKLÁDKY PODLAH",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "JDE TO I LEVNĚ",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "h1",
+   "text": "PRAHA A STŘEDNÍ ČECHY",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "pracujeme pro vás již 26 let (1997)",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "telefon : 602 311 520",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "REALIZACE ZAKÁZEK",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Naše firma nabízí k spokojenosti též plně profesionální pokládku-dodávku na klíč, tzn.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "posouzení kvality podkladů, případně navržení úprav",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "ukázka vzorků materiálu na místě realizace, pro snadnější představu",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Kdo z nás netouží po hezkém, útulném domově , ve kterém se po všech stránkách cítíme dobře? Příjemnou atmosféru bydlení dotváří nade vší pochybnost i podlaha po níž se denně pohybujeme. Doby striktně betonových podlah a jednoho druhu lina jsou naštěstí hlubokou minulostí. Dnes vám nabídneme obrovskou škálu přírodních a umělých moderních materiálů se skvělými vlastnostmi i vzhledem. Nabízíme služby, které vás uspokojí jak po stránce provedení, kvality, ale také ceny. Naší odměnou je vaše doporučení. Nově nabízíme také stavební práce – bližší informace najdete pod odkazem ZEDNICKÉ PRÁCE .",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "– odstranění starých podlah a jejich odvoz (včetně sutin) – vyměření podlah – vyrovnání podlah – samonivelační stěrky – montáže dřevěných, korkových a laminátových podlah, vinylových,  PVC a linolea (všech provedení a kvalit) – broušení parket – lakování podlah – pokládku koberců (zátěžových i bytových) – malování VŠE ZA VELKOOBCHODNÍ CENY",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "KOBERCE Textilní podlahové krytiny jsou teplé, měkké, tiché a útulné. Koberce se dnes vyrábějí v moderních dezénech a v dostatečně široké barevné škále. Přijedeme k vám se vzorníky až domů abyste si mohli vybrat. Spolupracujeme s obchodními domy BAUHAUS, TREND a KIKA. V těchto domech vám můžeme zajistit množstevní slevy.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "PLOVOUCÍ PODLAHY Provádíme pokládku plovoucích podlah, včetně kompletního olištování. Položíme i vámi zakoupenou podlahu. Poradíme s výběrem v pohodlí vašeho domova. Vybrat si můžete z bohatého vzorníku. To vše za velmi dobré ceny.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "VINYL, PVC A LINOLEUM Podlahoviny patří dnes k charakteru moderního bydlení. Zaručují zdravé a čisté bydlení. Tytam jsou doby, kdy jste si mohli „vybrat“ z jednoho druhu bez rozlišení účelu. Dnes se vyrábí v různých šířích, dekorech a k různým účelům použití. Bohaté vzorníky vám napoví víc.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "MALOVÁNÍ A ÚKLID V oblasti malování se pohybujeme již mnoho let. Oproti bohatým zkušenostem naše ceny zůstávají lidové. Objednat si u nás ale také můžete třeba jen úklid po malířích, úklid domácnosti anebo úklid firemních prostor v jakémkoliv rozsahu. Máme pečlivé zaměstnance a slevy pro stálé zákazníky.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "DOPLŇKOVÝ SORTIMENT Mimo výše uvedené služby si u nás můžete objednat: penetrace, stěrky, lepidla, tmely, soklové a přechodové lišty ke všem typům podlahovin, čistící zóny a rohože, obšívání koberců a čištění koberců.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Vámi zadané údaje budou použity pouze pro zpětný kontakt s vámi.",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Jaromír Vydra Pokládky podlah 250 65 Líbeznice – Bášť IČO: 42486297",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Jaromír Vydra Pokládky podlah Malkovského 589, 199 00 Praha 9 – Letňany",
+   "zdroj": "https://pokladkypodlah.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Ukázky práce: vzorníky, ukázky pokládek, šatny divadla Na Jezerce, zátěžový koberec v Amazonu, Obecní dům Praha 1, zátěžové linoleum s olištováním v RD Šestajovice",
+   "zdroj": "https://pokladkypodlah.cz/ukazky-prace/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Reference: Lesy České republiky – kanceláře; Lesy Praha; Obecní dům Praha Na Poříčí; Nemocnice Bulovka; Bytové domy Černý Most; Výzkumný ústav Řež; Obchodní akademie Žižkov; Hotel Avion; RD Jirny; Zámek Břežany; Pasáž Panská P-1; Rekonstrukce prostor ul. Sládkovičova; SVJ Stodůlky byt. domy; Mnoho bytů a RD z Prahy a Středních Čech",
+   "zdroj": "https://pokladkypodlah.cz/reference/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Zednické práce: Provádíme rekonstrukce bytů a rodinných domů. Dlažby a obklady, štukování, příčky a sádrokartonové konstrukce, zděná jádra na klíč. To vše kvalitně a za rozumné ceny.",
+   "zdroj": "https://pokladkypodlah.cz/zednicke-prace/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Kariéra: Přijmeme do našeho kolektivu šikovné podlaháře, zedníky a sádrokartonáře. Požadavky: odbornost a příjemné vystupování. Nabízíme: rychlé zapracování, férové podmínky a uspokojivé ohodnocení. Životopis na info@pokladkypodlah.cz. Všem zájemcům odpovíme.",
+   "zdroj": "https://pokladkypodlah.cz/kariera/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Realizace zakázek: obhlídka naším odborně proškoleným technikem; posouzení kvality podkladů, případně navržení úprav; vypracování cenové nabídky – zdarma; ukázka vzorků materiálu na místě realizace; možnost návštěvy architekta",
+   "zdroj": "https://pokladkypodlah.cz/"
+  }
+ ],
+ "chybi": [
+  "fotky novějších realizací ve vyšším rozlišení (současné jsou z let 2018–2019, max 936 px)",
+  "ceník nebo orientační ceny (web je neuvádí, na návrhu žádné ceny nejsou)",
+  "recenze/hodnocení zákazníků (na webu nejsou)",
+  "potvrzení, že rok 1997 a seznam služeb platí (na webu '26 let' – návrh píše 'od roku 1997')",
+  "fotky ke zednickým pracím"
+ ],
+ "popis_webu": "",
+ "majitel": "Jaromír Vydra (OSVČ, IČO 42486297)",
+ "ton": "lidový, přímý, důraz na cenu ('Jde to i levně', 'velkoobchodní ceny', 'lidové ceny'), osobní přístup (vzorníky až domů)",
+ "cilova_skupina": "domácnosti a firmy v Praze a středních Čechách (byty, RD, kanceláře, SVJ, veřejné budovy)"
+}

@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% set titulek = 'Kariéra – hledáme podlaháře, zedníky a sádrokartonáře | Pokládky podlah' %}
+{% set popis = 'Přijmeme šikovné podlaháře, zedníky a sádrokartonáře. Rychlé zapracování, férové podmínky a uspokojivé ohodnocení. Praha a střední Čechy.' %}
+{% set cesta = 'kariera/' %}
+{% set aktivni = 'kariera' %}
+{% block obsah %}
+<section class="podstranka-hlava">
+  <div class="wrap">
+    <p class="nadtitulek"><a href="{{ url('') }}">Pokládky podlah</a> / Kariéra</p>
+    <h1>Kariéra</h1>
+    <p class="perex">{{ data.kariera.uvod }}</p>
+  </div>
+</section>
+<section class="sekce sekce-uzka">
+  <div class="wrap kariera">
+    <ul class="kariera-pozice" role="list">
+      {% for p in data.kariera.pozice %}<li class="stitek"><span class="stitek-dirka" aria-hidden="true"></span>{{ p }}</li>{% endfor %}
+    </ul>
+    <dl class="kariera-podminky">
+      <div><dt>Požadujeme</dt><dd>{{ data.kariera.pozadujeme }}</dd></div>
+      <div><dt>Nabízíme</dt><dd>{{ data.kariera.nabizime }}</dd></div>
+    </dl>
+    <p class="kariera-kontakt">Svůj životopis pošlete na <a href="mailto:{{ site.kontakt.email }}?subject=Životopis">{{ site.kontakt.email }}</a>. Všem zájemcům odpovíme.</p>
+    <a class="tlacitko" href="mailto:{{ site.kontakt.email }}?subject=Životopis">Poslat životopis</a>
+  </div>
+</section>
+{% endblock %}

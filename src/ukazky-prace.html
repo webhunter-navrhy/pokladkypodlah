@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% from "_makra.html" import galerie, kontakt_pas %}
+{% set titulek = 'Ukázky práce – pokládky koberců, linolea a plovoucích podlah | Pokládky podlah' %}
+{% set popis = 'Fotky našich pokládek: Obecní dům Praha 1, šatny divadla Na Jezerce, zátěžový koberec v Amazonu, linoleum v RD Šestajovice a další.' %}
+{% set cesta = 'ukazky-prace/' %}
+{% set aktivni = 'ukazky-prace' %}
+{% block obsah %}
+<section class="podstranka-hlava">
+  <div class="wrap">
+    <p class="nadtitulek"><a href="{{ url('') }}">Pokládky podlah</a> / Ukázky práce</p>
+    <h1>Ukázky práce</h1>
+    <p class="perex">Fotky přímo ze zakázek, jak je pořídili naši podlaháři. Kliknutím fotku zvětšíte.</p>
+  </div>
+</section>
+<section class="sekce sekce-uzka">
+  <div class="wrap ukazky-vse">
+    {% for r in data.realizace %}{{ galerie(r, sizes='(min-width: 64rem) 15rem, 45vw', trida='realizace-radek') }}{% endfor %}
+  </div>
+</section>
+{{ kontakt_pas() }}
+{% endblock %}
