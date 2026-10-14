@@ -219,14 +219,24 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 
 /* ===== cena ===== */
 .cena { background: var(--krem); }
-.cena-in { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; padding-block: clamp(4rem, 3rem + 4vw, 7rem); }
-.cena-foto img { width: 100%; max-width: 20rem; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 2px; box-shadow: 0 18px 40px -20px rgba(43, 33, 25, .45); transform: rotate(-2deg); }
-.cena-text h2 { font-size: clamp(2.1rem, 1.4rem + 3vw, 4.2rem); max-width: 12em; margin-top: 1.25rem; }
-.cena-text p { margin-top: 1.25rem; max-width: 36rem; }
+.cena-in { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .9fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; padding-block: clamp(4.5rem, 3rem + 5vw, 8rem); }
+.cena-text h2 { font-size: clamp(2.1rem, 1.4rem + 3vw, 4.2rem); max-width: 11em; }
+.cena-partneri { margin-top: clamp(1.5rem, 1rem + 2vw, 2.5rem); padding-block: 1rem; border-block: 1px solid var(--linka-silna); font-size: clamp(1.15rem, .7rem + 2vw, 2.4rem); font-weight: 300; letter-spacing: .08em; line-height: 1.2; white-space: nowrap; }
+.cena-partneri span { color: var(--oranz-text); padding-inline: .2em; }
+.cena-text p:not(.cena-partneri) { margin-top: 1.25rem; max-width: 36rem; }
 .cena-pozn { font-style: italic; font-weight: 300; color: var(--sepie-2); }
-.razitko { display: inline-block; font-style: italic; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; color: var(--oranz-text); border: 1.5px solid currentColor; padding: .45rem .9rem; border-radius: 2px; transform: rotate(-3deg); }
+.cena-foto img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 2px; }
+.cena-foto figcaption { margin-top: .6rem; font-size: var(--small); color: var(--muted); }
 
 /* ===== ukázky práce ===== */
+.zakazka { display: grid; gap: 1rem; align-content: start; }
+.zakazka h3 { font-size: clamp(1.15rem, 1rem + .5vw, 1.4rem); }
+.zakazka-fotky { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: .5rem; }
+.zakazka-fotky img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+.zakazka-hlavni { grid-row: span 2; }
+.zakazka-hlavni img { aspect-ratio: 3 / 4; }
+.zakazka-zrcadlo .zakazka-fotky { grid-template-columns: 1fr 2fr; }
+.zakazka-zrcadlo .zakazka-hlavni { grid-column: 2; grid-row: 1 / span 2; }
 .ukazky-mrizka { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.5rem, 4vw, 3.5rem) clamp(1.5rem, 3vw, 3rem); }
 .realizace { display: grid; gap: .8rem; }
 .realizace-fotky { display: grid; gap: .5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -342,7 +352,7 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
   .postup-hlava { position: static; }
   .tri-sloupce { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .paticka-in { grid-template-columns: 1fr 1fr; }
-  .cena-foto img { max-width: 16rem; }
+  .cena-foto { max-width: 26rem; }
 }
 @media (max-width: 40rem) {
   .vejir { --w: 6.6rem; --h: 17.5rem; --krok: 9deg; height: 23rem; }
@@ -359,6 +369,5 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
   .paticka-in { grid-template-columns: minmax(0, 1fr); }
   .akce .tlacitko { flex: 1 1 100%; }
   .reference-list li { font-size: .92rem; }
-  .cena-foto img { max-width: 12rem; }
   .ukazky-mrizka, .tri-sloupce { grid-template-columns: minmax(0, 1fr); }
 }

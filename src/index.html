@@ -1,5 +1,5 @@
 {% extends "_base.html" %}
-{% from "_makra.html" import galerie %}
+{% from "_makra.html" import galerie, zakazka %}
 {% set titulek = 'Pokládka podlah Praha a střední Čechy | Jde to i levně – Jaromír Vydra' %}
 {% set cesta = '' %}
 {% set aktivni = '' %}
@@ -76,34 +76,21 @@
       {% endfor %}
     </ol>
   </div>
-<div class="wrap provadime">
-        <h3>Nabízíme a&nbsp;provádíme</h3>
-      <ul class="carky tri-sloupce" role="list">
-        <li>odstranění starých podlah a&nbsp;jejich odvoz (včetně sutin)</li>
-        <li>vyměření podlah</li>
-        <li>vyrovnání podlah</li>
-        <li>samonivelační stěrky</li>
-        <li>montáže dřevěných, korkových a&nbsp;laminátových podlah</li>
-        <li>vinyl, PVC a&nbsp;linoleum všech provedení a&nbsp;kvalit</li>
-        <li>broušení parket</li>
-        <li>lakování podlah</li>
-        <li>pokládku koberců (zátěžových i&nbsp;bytových)</li>
-        <li>malování</li>
-      </ul>
-      </div>
+
 </section>
 
 <section class="cena">
   <div class="wrap cena-in">
-    <figure class="cena-foto">
-      {{ img('img_20190214_104316.jpg', 'Vzorky podlah připravené na stole', sizes='(min-width: 64rem) 20rem, 60vw') }}
-    </figure>
     <div class="cena-text">
-      <p class="razitko" aria-hidden="true">Jde to i&nbsp;levně</p>
       <h2>Vše za velkoobchodní ceny</h2>
-      <p>Spolupracujeme s&nbsp;obchodními domy BAUHAUS, TREND a&nbsp;KIKA, kde vám můžeme zajistit množstevní slevy. Položíme i&nbsp;podlahu, kterou si koupíte sami. Stálí zákazníci mají slevy.</p>
+      <p class="cena-partneri" aria-label="Spolupracujeme s obchodními domy BAUHAUS, TREND a KIKA">BAUHAUS <span aria-hidden="true">·</span> TREND <span aria-hidden="true">·</span> KIKA</p>
+      <p>S&nbsp;těmito obchodními domy spolupracujeme a&nbsp;můžeme vám v&nbsp;nich zajistit množstevní slevy. Položíme i&nbsp;podlahu, kterou si koupíte sami, a&nbsp;stálí zákazníci mají slevy.</p>
       <p class="cena-pozn">Naší odměnou je vaše doporučení.</p>
     </div>
+    <figure class="cena-foto">
+      {{ img('img_20190214_104316.jpg', 'Vzorky podlah připravené na stole', sizes='(min-width: 64rem) 26rem, 90vw') }}
+      <figcaption>Vzorky, se kterými za vámi přijedeme</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -115,7 +102,7 @@
     </div>
     <div class="ukazky-mrizka">
       {% set r = data.realizace %}
-      {% for i in [0, 1, 3, 4] %}{{ galerie(r[i], sizes='(min-width: 64rem) 12rem, 30vw', limit=3) }}{% endfor %}
+      {% for i in [0, 1, 3, 4] %}{{ zakazka(r[i], loop.index0) }}{% endfor %}
     </div>
   </div>
 </section>

@@ -1,15 +1,15 @@
 {
   "znamka": 7,
   "slabiny": [
-    "Sekce „Vše za velkoobchodní ceny“ (PC buňka 5, mobil buňka 5–6): fotka katalogu je zrcadlově otočená, nápis na obálce se čte „noitcello“. Na první pohled to vypadá jako chyba. Fotku vrátit do správné orientace (odebrat scaleX(-1) nebo flip ve zdroji), nebo ji nahradit vzorníkem či fotkou realizace z briefu.",
-    "Záložky materiálů v sekci „Ze vzorníku si vyberete u sebe doma“ (PC buňka 3, mobil buňka 2): Parkety a podklad, Malování a úklid a Doplňkový sortiment mají místo vzorku prázdný béžový čtvereček. Vzorník, na kterém stojí celý koncept, tak působí nedodělaně. Každé záložce dát skutečný výřez z fotek klienta (parkety z IMG_20190207…, linoleum ze Šestajovic, stěna nebo lišta), nebo prázdné náhledy úplně zrušit. Zároveň vyměnit vzorek vzorek-koberec-modry-185.webp za větší zdroj, protože na mobilu je roztažený 1,41×.",
-    "Sekce „Realizace na klíč“ a „Ukázky práce“ na PC (buňky 4–7): seznam „Nabízíme a provádíme“ přetéká pod kroky 1–5, takže vlevo visí sloupec a vpravo zůstává prázdno (buňka 5). Galerie je rozsypaná: různé velikosti dlaždic, malá fotka z Amazonu volně plave a mezi skupinami jsou velké díry. Seznam služeb rozdělit do dvou sloupců pod úvodní text, aby skončil zároveň s kroky. Galerii postavit na pevnou mřížku se stejnou výškou řádku (např. 3 sloupce, výška 280 px, object-fit: cover) a s popiskem u každé skupiny."
+    "Sekce „Nabízíme a provádíme“ (PC snímek 5, mobil 4–5) je jen holý seznam s pomlčkami ve třech sloupcích a pod ním zůstává velká prázdná plocha. Navíc hned navazuje na „Realizaci na klíč“, která je taky seznam, takže jdou dva textové výčty za sebou a uprostřed stránky rytmus padá. Oprava: služby rozdělit podle materiálů, tedy každou přidat k odpovídající záložce ve „Vzorníku“ (broušení a lakování k Parketám, stěrky a vyrovnání k Plovoucím podlahám, odvoz starých podlah obecně). Zbytek dát do jednoho kompaktního řádku pod záložky a samostatnou sekci zrušit.",
+    "Sekce „Vše za velkoobchodní ceny“ (PC snímky 5–6, mobil 5–6) má malou nakloněnou fotku se stínem a orámované razítko „JDE TO I LEVNĚ“. Působí to lacině, jako koláž, a na mobilu je fotka useknutá u kraje. Oprava: fotku narovnat, dát ji ve skutečném poměru a širokou přes celý sloupec, razítko vyhodit (slogan už je v logu). Hlavní sdělení postavit na textu: názvy BAUHAUS · TREND · KIKA vysázet velkým písmem jako typografický prvek a k nim větu o množstevních slevách.",
+    "Ukázky práce (PC snímky 6–7, mobil 7) tvoří čtyři stejné trojice malých čtvercových fotek s popiskem za kroužkem ○. Je to monotónní mřížka a nejsilnější realizace (červené schodiště Obecního domu, šatny divadla Na Jezerce) se v ní ztratí. Oprava: u každé zakázky dát jednu hlavní fotku přes 2/3 šířky (u 936px zdrojů do cca 640 px, ať se nezvětšují přes 1,3×) a vedle ní dvě menší. Název zakázky dát jako malý nadpis nad fotky místo kroužkového popisku. Na mobilu nechat hlavní fotku přes celou šířku a dvě menší pod ni."
   ],
   "silne": [
-    "Koncept vychází přímo z oboru: vějíř vzorků v hero a vzorník materiálů jako navigace odpovídají skutečné službě „přijedeme se vzorníky až domů“.",
-    "Brand sedí: textové logo POKLÁDKY PODLAH s kurzívou „JDE TO I LEVNĚ“, oranžová tlačítka a krémová podle starého webu, lidový tón textů zůstal.",
-    "Obsah je doložený: 1997, reference ve štítcích, BAUHAUS/TREND/KIKA, IČO a adresy jsou z briefu a nic není vymyšlené.",
-    "Na mobilu nic nepřetéká a dotykové cíle jsou v pořádku. Telefon je v hlavičce i v kontaktu velký a je jasné, co firma dělá a kde."
+    "Jasný koncept z oboru: vzorník, který technik přiveze domů. Vějíř vzorků v hero a záložky materiálů s výřezy z reálných fotek vycházejí přímo z hlavní služby firmy.",
+    "Brand zůstal: textové logo POKLÁDKY PODLAH ve verzálkovém serifu s kurzívou JDE TO I LEVNĚ, krémová, oranžová a sépiová z původního webu (antik.jpg v sekci referencí).",
+    "Obsah je pravdivý a vychází z briefu: rok 1997, kroky realizace, BAUHAUS/TREND/KIKA i seznam referencí. Nic vymyšleného, žádné recenze ani čísla.",
+    "Typografie Young Serif + Public Sans drží háčky v pořádku, QA je čisté (žádné přetečení na 6 šířkách, 1 MB). Kontakt (telefon v hlavičce, formulář, provozovna i sídlo) je jasný."
   ],
-  "verdikt": "opravit – dobrý koncept, odpovídá oboru a brandu, ale zrcadlová fotka, prázdné vzorky a rozsypaná galerie na PC zatím působí nedodělaně. Po těchto třech opravách je web reálně na 8."
+  "verdikt": "Web má dobrý koncept i brand a obsah je poctivý, ale prostředek stránky (seznam služeb, nakloněná fotka s razítkem, uniformní galerie) působí jako šablona a rytmus tam padá. Opravit tyto tři sekce, pak je to na 8."
 }

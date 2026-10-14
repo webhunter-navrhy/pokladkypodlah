@@ -19,3 +19,12 @@
   </div>
 </section>
 {% endmacro %}
+
+{% macro zakazka(r, poradi=0) %}
+<figure class="zakazka{% if poradi % 2 %} zakazka-zrcadlo{% endif %}" id="{{ r.id }}">
+  <figcaption><h3>{{ r.nazev }}</h3></figcaption>
+  <div class="zakazka-fotky">
+    {% for f in r.fotky[:3] %}<a class="foto-odkaz{% if loop.first %} zakazka-hlavni{% endif %}" href="{{ img_url(f[0], 1280) }}" data-popis="{{ r.nazev }}">{{ img(f[0], f[1], sizes=('(min-width: 64rem) 24rem, 66vw' if loop.first else '(min-width: 64rem) 12rem, 33vw')) }}</a>{% endfor %}
+  </div>
+</figure>
+{% endmacro %}
